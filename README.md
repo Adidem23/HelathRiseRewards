@@ -1,17 +1,17 @@
-# HealthRise Rewards App
+## HealthRise Rewards App ##
 
-![App Logo](https://img.freepik.com/free-vector/red-logo-black-background_1195-52.jpg?w=740&t=st=1692231919~exp=1692232519~hmac=7c252187bb258b91eb6da250a69c7df2e10140e08252939e9617866a45dfea3d)
+## About ##
+Basically It is the Dapp in which we can perform certain exercies such as squats , Crunches infront of camera and based on your perforamnce and leaderboard . Our App will give you the ERC721(NFTs) , ERC20 Tokens and even some cash prizes also For the first version I have not implemented all the Things But I have Created the simple Prototype of the whiole app how it will be 
 
-## Table of Contents
-- [About](#about)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
-## About
-HealthRise Rewards is an AI-based health tracker app designed to motivate users to engage in regular physical activities by providing a rewarding and gamified experience. The app leverages AI algorithms, gamification elements, and community engagement to encourage a healthier lifestyle.
+##Tech Stack Used ##
+1. ViteJS and ReactJs For Frontend
+2. Metamask as Web3 Wallet
+3. Spline3D for 3D models
+4. EmailJs for EmailService
+5. Polygon Mumbai Blockchain
+6. Thirdweb Sdk For the Smart Contracts
+7. UIVerse and NextUI Frontend Libraries
+8. ERC721 Contracts
 
 ## Features
 - Personalized activity tracking using AI algorithms.
@@ -19,6 +19,3 @@ HealthRise Rewards is an AI-based health tracker app designed to motivate users 
 - AI-powered insights for personalized workout recommendations.
 - Social interaction, user groups, and challenges.
 - Progress tracking and achievement celebration.
-
-## Installation
-1. Clone the repository:
