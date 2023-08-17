@@ -12,6 +12,8 @@ Basically It is the Dapp in which we can perform certain exercies such as squats
 6. Thirdweb Sdk For the Smart Contracts
 7. UIVerse and NextUI Frontend Libraries
 8. ERC721 Contracts
+9. Posenet Tensorflow model for pose Estimation
+10. This project combines AI  and Blockchain Domains
 
 ## Features
 - Personalized activity tracking using AI algorithms.
