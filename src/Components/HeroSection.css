@@ -2,7 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5rem 10%;
+    padding: 3rem 10%;
+    /* border:3px solid red; */
 }
 
 .hero-content {

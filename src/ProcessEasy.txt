@@ -1,59 +1,267 @@
-https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/premium/eth-dynamic-premium.png
+import '../Components/MarqueSection.css';
 
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+<Spline scene="https://prod.spline.design/d36DR4VEYOTU5laL/scene.splinecode" /> 
 
-font-family: 'Kanit', sans-serif;
+<Spline scene="https://prod.spline.design/3IYducvwXlKthw-C/scene.splinecode" style={{marginLeft:"50px"}} />
 
-button {
-    text-decoration: none;
-    position: relative;
-    border: none;
-    font-size: 14px;
-    font-family: inherit;
-    color: #fff;
-    width: 9em;
-    height: 3em;
-    line-height: 2em;
+<Spline scene="https://prod.spline.design/MO7xioKnDj9kmlDD/scene.splinecode" /> 
+
+{/* <Spline scene="https://prod.spline.design/XDO1Fky5-BpBGdJr/scene.splinecode" /> */}
+
+
+.card-section {
     text-align: center;
-    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-    background-size: 300%;
-    border-radius: 30px;
-    z-index: 1;
+    padding: 80px 0; 
 }
 
-button:hover {
-    animation: ani 8s linear infinite;
+.explore-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card {
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.card-button {
+    background-color: #03a9f4;
+    color: white;
     border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-@keyframes ani {
-    0% {
-        background-position: 0%;
-    }
 
-    100% {
-        background-position: 400%;
-    }
+import '../Components/Cards.css';
+
+
+const Cards = () => {
+    return (
+        <section className="card-section">
+            <h2 className="explore-heading">Explore Features</h2>
+            <div className="card-container">
+                {/* <div className="card">
+                    <h3 className="card-title">Card Title 1</h3>
+                    <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button className="card-button">Learn More</button>
+                </div>
+                <div className="card">
+                    <h3 className="card-title">Card Title 2</h3>
+                    <p className="card-text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <button className="card-button">Learn More</button>
+                </div> */}
+
+                <div className="card">
+                    <div className="icon">
+                    <img src="https://img.freepik.com/free-vector/cute-man-lifting-barbell-gym-cartoon-vector-icon-illustration-people-sport-icon-concept-isolated_138676-6223.jpg?size=626&ext=jpg&ga=GA1.2.97462443.1689537207&semt=ais" />
+                    </div>
+                    <p className="title">Exercise</p>
+                    <p className="text">Pull Hard and Get Up From The Seat and Grind Some Crunches and Squats and Earn Rewards</p>
+                    <button className='btn'>Start</button>
+                </div>
+
+                <div className="card">
+                    <div className="icon">
+                    <img src="https://img.freepik.com/free-vector/cute-astronaut-waving-hand-game-controller-cartoon-vector-icon-illustration-technology-science-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-3714.jpg?size=626&ext=jpg&ga=GA1.2.97462443.1689537207&semt=ais" />
+                    </div>
+                    <p className="title">Games</p>
+                    <p className="text">If you are Game Freak.Play Some Simple games and Make Your Pockets Heavy Bruhh!!</p>
+                    <button className='btn'>Start</button>
+                </div>
+
+            </div>
+        </section>
+    );
+};
+
+export default Cards;
+
+
+.card-section {
+    text-align: center;
+    padding: 80px 0;
 }
 
-button:before {
-    content: '';
+.explore-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+/* This is the Css Only for the Button */
+
+.btn {
+    position: relative;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.7em 2.5em;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 300;
+    color: black;
+    background-color: white;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
     position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
+    top: 0;
+    left: 0;
     z-index: -1;
-    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-    background-size: 400%;
-    border-radius: 35px;
-    transition: 1s;
+    transition: all .4s;
 }
 
-button:hover::before {
-    filter: blur(20px);
+.btn::after {
+    background-color: #fff;
 }
 
-button:active {
-    background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
 }
+
+
+/* This is the end of the css for button */
+
+
+/* This is start of Experimental Css */
+
+
+.card {
+    width: 100%;
+    max-width: 300px;
+    min-width: 200px;
+    height: 250px;
+    background-color: #292929;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+    border: 2px solid rgba(7, 7, 7, 0.12);
+    font-size: 16px;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.icon img {
+    margin: 0 auto;
+    width: 100%;
+    height: 80px;
+    max-width: 80px;
+    background: linear-gradient(90deg, #7eaaff 0%, #ff48fb 40%, rgba(0, 0, 0, 0.28) 60%);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s ease;
+    background-position: 0px;
+    background-size: 200px;
+}
+
+.icon img {
+    fill: white;
+}
+
+.card .title {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.card .text {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-weight: 200;
+    letter-spacing: 2px;
+    opacity: 0;
+    max-height: 0;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    height: 270px;
+}
+
+.card:hover .text {
+    transition: all 0.3s ease;
+    opacity: 1;
+    max-height: 40px;
+}
+
+.card:hover .icon {
+    background-position: -120px;
+    transition: all 0.3s ease;
+}
+
+.card:hover .btn {
+    margin-top: 30px;
+}
+
+
+/* This is End of Experimental Css */

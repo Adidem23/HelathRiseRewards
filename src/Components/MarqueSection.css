@@ -1,0 +1,54 @@
+.marquee {
+    width: 100%;
+    height: 50px; 
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marquee-content {
+    animation: marqueeAnimation 80s linear infinite; 
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transform-origin: left center; 
+}
+
+.marquee-content span {
+    margin: 0 50px; 
+    animation: marqueeTextAnimation 80s linear infinite; 
+    position: relative;
+    transform-origin: right center; /* Set the transform origin */
+}
+
+/* Impressive-looking filler */
+.marquee-content span:before,
+.marquee-content span:after {
+    content: "★ ★ ★ "; /* Filler content */
+    color: #ff8000;
+    margin: 0 10px;
+}
+
+@keyframes marqueeAnimation {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marqueeTextAnimation {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 90% {
+        transform: translateX(-100%);
+    }
+}

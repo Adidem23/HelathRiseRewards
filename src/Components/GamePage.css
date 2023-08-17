@@ -1,0 +1,436 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -600px;
+  z-index: -1;
+}
+
+.game-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: fit-content;
+  margin-top: 0px;
+}
+
+.container3 {
+  margin-top: 75px;
+  height: 25vh;
+  padding: 12px 12px;
+}
+
+.container3 p {
+  display: block;
+  margin: auto;
+  width: fit-content;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+.container3 a {
+  display: block;
+  margin: auto;
+  width: fit-content;
+  margin-top: 10px;
+  font-size: 1.5em;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+
+
+/* This is start of the css  */
+
+.card12 {
+  width: 350px;
+  height: 250px;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  border-radius: 8px;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  cursor: pointer;
+  margin-left: 50px;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.card-content12 {
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.card456 {
+  display: block;
+  margin: auto;
+  width: fit-content
+}
+
+.card-content12 .card-title12 {
+  font-size: 24px;
+  font-weight: 700;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.card-conten12 .card-para12 {
+  color: inherit;
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+.card12:hover {
+  transform: rotateY(10deg) rotateX(10deg) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card12:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  z-index: 1;
+}
+
+.card12:hover:before {
+  transform: translateX(-100%);
+}
+
+.card12:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  z-index: 1;
+}
+
+.card12:hover:after {
+  transform: translateX(100%);
+}
+
+/* This is the end of the css */
+
+
+.welcome-div {
+  width: 100%;
+  max-width: 500px;
+  color: black;
+  padding: 20px;
+  margin-top: -150px;
+}
+
+
+.join-awesomeness {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.join-awesomeness h2 {
+  color: black;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.input-field {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+.join-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* .overlay {
+  position: absolute;
+  z-index: 9; 
+} */
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  margin-top: 30px;
+  padding: 0px;
+  margin-bottom: 90px;
+}
+
+.shirt-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 50vh;
+  max-height: 50vh;
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #333;
+}
+
+.shirt-details {
+  text-align: center;
+}
+
+.shirt-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.shirt-description {
+  font-size: 14px;
+  color: #777;
+}
+
+.custom-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.custom-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.custom-button:hover {
+  background-color: #0056b3;
+}
+
+/* Winner Card CSS  Starts */
+
+.notificationCard {
+  width: 220px;
+  height: 280px;
+  background: rgb(245, 245, 245);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 35px;
+  gap: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.123);
+  border-radius: 20px;
+}
+
+.bellIcon {
+  width: 50px;
+  margin: 20px 0px;
+}
+
+.bellIcon path {
+  fill: rgb(168, 131, 255);
+}
+
+.notificationHeading {
+  color: black;
+  font-weight: 600;
+  font-size: 2.3em;
+}
+
+.notificationPara {
+  color: rgb(133, 133, 133);
+  font-size: 2.0em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.AllowBtn {
+  width: 120px;
+  height: 25px;
+  background-color: rgb(168, 131, 255);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.7em;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.NotnowBtn {
+  width: 120px;
+  height: 25px;
+  color: rgb(168, 131, 255);
+  border: none;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 0.7em;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.NotnowBtn:hover {
+  background-color: rgb(239, 227, 255);
+}
+
+.AllowBtn:hover {
+  background-color: rgb(153, 110, 255);
+}
+
+/* Winner Cards Css Ends  */
+
+/* This is for the astro.js */
+
+.glitch {
+  position: relative;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+  letter-spacing: 5px;
+  z-index: 1;
+  animation: shift 1s ease-in-out infinite alternate;
+}
+
+.glitch:before,
+.glitch:after {
+  display: block;
+  content: attr(data-glitch);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+}
+
+.glitch:before {
+  animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  color: #8b00ff;
+  z-index: -1;
+}
+
+.glitch:after {
+  animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+  color: #00e571;
+  z-index: -2;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+
+  20% {
+    transform: translate(-3px, 3px);
+  }
+
+  40% {
+    transform: translate(-3px, -3px);
+  }
+
+  60% {
+    transform: translate(3px, 3px);
+  }
+
+  80% {
+    transform: translate(3px, -3px);
+  }
+
+  to {
+    transform: translate(0);
+  }
+}
+
+@keyframes shift {
+
+  0%,
+  40%,
+  44%,
+  58%,
+  61%,
+  65%,
+  69%,
+  73%,
+  100% {
+    transform: skewX(0deg);
+  }
+
+  41% {
+    transform: skewX(10deg);
+  }
+
+  42% {
+    transform: skewX(-10deg);
+  }
+
+  59% {
+    transform: skewX(40deg) skewY(10deg);
+  }
+
+  60% {
+    transform: skewX(-40deg) skewY(-10deg);
+  }
+
+  63% {
+    transform: skewX(10deg) skewY(-5deg);
+  }
+
+  70% {
+    transform: skewX(-50deg) skewY(-20deg);
+  }
+
+  71% {
+    transform: skewX(10deg) skewY(-10deg);
+  }
+}
+
+/* This is end of the astro.js */

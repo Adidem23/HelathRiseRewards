@@ -1,33 +1,52 @@
-import logoImage from '../Images/SukunaLogo.png';
-import iconImage1 from '../Images/Linkedin.png';
-import iconImage2 from '../Images/Instagram.png';
-import iconImage3 from '../Images/Github.png';
 import '../Components/Navbar.css';
+import { useState } from 'react';
 
 const Navbar = () => {
+
+    const [Account, setAccount] = useState("")
+
+    const ConnectMetamask = async () => {
+
+        const but=document.getElementById('munde');
+
+        const { ethereum } = window;
+
+        const account = await ethereum.request({
+            method: "eth_requestAccounts",
+        });
+
+        setAccount(account[0]);
+
+        munde.innerHTML="Connected";
+
+        ethereum.on('accountsChanged', async (accountnew) => {
+            setAccount(accountnew[0]);
+        })
+
+    }
+
+
     return (
         <nav className="navbar">
             <div className="logo">
-                <img src={logoImage} alt="Logo" />
-                <span className="logo-text">Posify</span>
+                <img src={"https://img.freepik.com/free-vector/red-logo-black-background_1195-52.jpg?w=740&t=st=1692231919~exp=1692232519~hmac=7c252187bb258b91eb6da250a69c7df2e10140e08252939e9617866a45dfea3d"} alt="Logo" />
+                <span className="logo-text">HealthRise</span>
 
             </div>
-            <a href="https://www.linkedin.com/in/aditya-suryawanshi-945145235/"><img src={iconImage1} alt="Icon 1" className="icon1" /></a>
-            <img src={iconImage2} alt="Icon 2" className="icon2" />
-            <img src={iconImage3} alt="Icon 3" className="icon3" />
-            
+
             <ul className="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Contact</a></li>
+                {Account && <li><a href="#">{Account}</a></li>}
             </ul>
-            <input id="checkbox" name="checkbox" type="checkbox" />
-            <label className="label" htmlFor="checkbox">
-            </label>
-            <button className="connect-button">Connect</button>
+
+
+            <button className="connect-button but2" id='munde' onClick={ConnectMetamask}>Connect</button>
         </nav>
     );
+
 };
 
 export default Navbar;

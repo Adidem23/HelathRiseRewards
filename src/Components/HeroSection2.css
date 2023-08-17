@@ -1,0 +1,74 @@
+/* Styles for second hero section */
+.second-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.second-hero-content {
+    max-width: 1200px;
+    padding: 0 70px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.second-hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.second-hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.second-hero-text {
+    width: 60%;
+    padding: 20px; 
+}
+
+.second-hero-content-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.second-hero-content-text {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    padding: 5px 130px;
+}
+
+#but {
+    padding: 17px 40px;
+    border-radius: 50px;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;
+}
+
+#but:hover {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+#but:active {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
