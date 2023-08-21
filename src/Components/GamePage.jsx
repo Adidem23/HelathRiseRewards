@@ -182,8 +182,6 @@ const GamePage = () => {
     }
 
 
-
-
     const ListNft = async (contract) => {
 
         console.log("Account is : " + Account);
