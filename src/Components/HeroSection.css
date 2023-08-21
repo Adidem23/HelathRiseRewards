@@ -9,7 +9,8 @@
 .hero-content {
     margin-top: -27px;
     flex: 1;
-    padding-right: 2rem;
+    padding-right: 1.5rem;
+    margin-left: 20px;
 }
 
 .hero-content h1 {
@@ -21,6 +22,7 @@
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
+
 
 .hero-image {
     margin-top: -27px;
