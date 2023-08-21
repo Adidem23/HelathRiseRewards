@@ -1,7 +1,5 @@
 import '../Components/HeroSection2.css';
 import Spline from '@splinetool/react-spline';
-import { Link } from 'react-router-dom';
-
 
 const HeroSection2 = () => {
     return (
@@ -17,9 +15,7 @@ const HeroSection2 = () => {
                         <h2 className="second-hero-content-title">Happiness Matters</h2>
                         <p className="second-hero-content-text">Come! Explore! Make Connections and Start Become Healthier in More Efficient Way Possible.HealthRise Provides You that Platform Collaborate , Enjoy and Explore and Make Yourself More happy Thats Our Motto</p>
 
-                        <Link to="/games">
-                            <button id='but'>Start</button>
-                        </Link>
+                        <button id='but'>Start</button>
                     </div>
                 </div>
             </div>
