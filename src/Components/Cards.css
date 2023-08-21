@@ -194,3 +194,7 @@
 
 
 /* This is end of the tech stack div */
+
+.failed{
+    border:"3px solid red"
+}
