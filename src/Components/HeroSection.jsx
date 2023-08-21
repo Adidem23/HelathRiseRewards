@@ -12,8 +12,7 @@ const HeroSection = () => {
             </div>
 
             <div className="hero-image">
-                {/* <Spline scene="https://prod.spline.design/7mshLneit2lhgKeQ/scene.splinecode" style={{ marginLeft: "70px" }} /> */}
-                <Spline scene="https://prod.spline.design/x9vl2HYYPfBXZZ2i/scene.splinecode" style={{ marginLeft: "70px" }} />
+                <Spline scene="https://prod.spline.design/7mshLneit2lhgKeQ/scene.splinecode" style={{ marginLeft: "70px" }} />
             </div>
         </section>
     );

@@ -31,20 +31,12 @@ const GamePage = () => {
         setEmail(e.target.value);
     }
 
-    const FormSubmitted = async (e) => {
+    const FormSubmitted = (e) => {
         e.preventDefault();
         setBut("True");
         const randomnumber = Math.floor(Math.random() * games.length);
         setGame(games[randomnumber]);
         setActivewebcam(true);
-        const { ethereum } = window;
-        const account = await ethereum.request({
-            method: "eth_requestAccounts",
-        });
-        setAccount(account[0]);
-        ethereum.on('accountsChanged', async (accountnew) => {
-            setAccount(accountnew[0]);
-        })
     }
 
     const webcamRef = useRef(null);
@@ -182,9 +174,25 @@ const GamePage = () => {
     }
 
 
+    const setAccountMeata = async () => {
+        const { ethereum } = window;
+
+        const account = await ethereum.request({
+            method: "eth_requestAccounts",
+        });
+
+        setAccount(account[0]);
+
+        ethereum.on('accountsChanged', async (accountnew) => {
+            setAccount(accountnew[0]);
+        })
+    }
+
+    setAccountMeata();
+
+
     const ListNft = async (contract) => {
 
-        console.log("Account is : " + Account);
 
         const metadata = {
             name: "Aditya NFT",
@@ -233,7 +241,7 @@ const GamePage = () => {
 
         if (leftWristY > MIN_WRIST_Y && rightWristY > MIN_WRIST_Y) {
             setWristStopCount(prevCount => prevCount + 1);
-        } else {
+        }else{
             console.log('Stop Count' + WristStopCount);
 
         }
